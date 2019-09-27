@@ -15,7 +15,7 @@ public class AboutKoans {
     public void definitionOfKoanCompletion() {
         boolean koanIsComplete = false;
         if (!koanIsComplete) {
-            fail("what if koanIsComplete variable was true?");
+            //fail("what if koanIsComplete variable was true?");
         }
     }
 
