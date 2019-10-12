@@ -27,8 +27,8 @@ public class AboutAssertions {
 
     @Koan
     public void assertNullObjectReference() {
-        Object someObject = ;
-        assertNull(null);
+        Object someObject = null;
+        assertNull(someObject);
     }
 
     @Koan
@@ -81,6 +81,6 @@ public class AboutAssertions {
         assertEquals(original, same);
         assertEquals(original, different);
         // ...but only one of them refers to a different instance.
-        assertNotSame(original, 1);  // We want equal, but _not_ the same.
+        assertNotSame(original, different);  // We want equal, but _not_ the same.
     }
 }
